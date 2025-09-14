@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "bulma/css/bulma.css";
+@import url("https://fonts.googleapis.com/css2?family=Mynerve&display=swap");
+
+/* =======================================
+   🌞 Light Mode (default & [data-theme=light])
+========================================== */
+@media (prefers-color-scheme: light) {
+    :root {
+      --bulma-background: #FEF8E8;
+      --bulma-primary: #2F3061;
+      --bulma-link: #007CBE;
+      --bulma-info: #9D8420;
+      --bulma-success: #8EA604;
+      --bulma-warning: #F5B409;
+      --bulma-danger: #F95738;
+      --bulma-black: #0A0A0A;
+      --bulma-black-bis: #121212;
+      --bulma-black-ter: #242424;
+      --bulma-grey-darker: #363636;
+      --bulma-grey-dark: #4A4A4A;
+      --bulma-grey-light: #B5B5B5;
+      --bulma-grey-lighter: #DBDBDB;
+      --bulma-white-ter: #F5F5F5;
+      --bulma-white-bis: #FAFAFA;
+      --bulma-white: #FFFFFF;
+
+      --bulma-radius: 9px;
+      --bulma-family-primary: "Mynerve", cursive;
+    }
+  }
+  
+  [data-theme="light"],
+  .theme-light {
+    --background: #FEF8E8;
+    --primary: #2F3061;
+    --link: #007CBE;
+    --info: #9D8420;
+    --success: #8EA604;
+    --warning: #F5B409;
+    --danger: #F95738;
+  
+    --black: #0A0A0A;
+    --black-bis: #121212;
+    --black-ter: #242424;
+    --grey-darker: #363636;
+    --grey-dark: #4A4A4A;
+    --grey-light: #B5B5B5;
+    --grey-lighter: #DBDBDB;
+    --white-ter: #F5F5F5;
+    --white-bis: #FAFAFA;
+    --white: #FFFFFF;
+  
+    --radius: 9px;
+    --family-primary: "Mynerve", cursive;
+  }
+  
+  
+  /* =======================================
+     🌙 Dark Mode ([prefers-color-scheme: dark] & [data-theme=dark])
+  ========================================== */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: #1E1E1E;
+      --primary: #8C91E0;
+      --link: #5AB9F0;
+      --info: #F9CB40;
+      --success: #C2E812;
+      --warning: #FFD85C;
+      --danger: #FF6E5A;
+  
+      --black: #000000;
+      --black-bis: #121212;
+      --black-ter: #1E1E1E;
+      --grey-darker: #2B2B2B;
+      --grey-dark: #3A3A3A;
+      --grey-light: #AAAAAA;
+      --grey-lighter: #CCCCCC;
+      --white-ter: #EAEAEA;
+      --white-bis: #F0F0F0;
+      --white: #FFFFFF;
+  
+      --radius: 9px;
+      --family-primary: "Mynerve", cursive;
+    }
+  }
+  
+  [data-theme="dark"],
+  .theme-dark {
+    --background: #1E1E1E;
+    --primary: #8C91E0;
+    --link: #5AB9F0;
+    --info: #F9CB40;
+    --success: #C2E812;
+    --warning: #FFD85C;
+    --danger: #FF6E5A;
+  
+    --black: #000000;
+    --black-bis: #121212;
+    --black-ter: #1E1E1E;
+    --grey-darker: #2B2B2B;
+    --grey-dark: #3A3A3A;
+    --grey-light: #AAAAAA;
+    --grey-lighter: #CCCCCC;
+    --white-ter: #EAEAEA;
+    --white-bis: #F0F0F0;
+    --white: #FFFFFF;
+  
+    --radius: 9px;
+    --family-primary: "Mynerve", cursive;
+  }
+  

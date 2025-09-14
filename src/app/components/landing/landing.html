@@ -1,0 +1,50 @@
+
+  
+  <!-- Hero Section -->
+  <section class="hero is-medium bg-cover bg-center flex items-center justify-center" 
+          >
+    <div class="has-text-centered bg-black bg-opacity-50 p-8 rounded-lg text-white">
+      <h1 class="title is-1 font-bold">Freshly Baked, Lovingly Delivered</h1>
+      <p class="subtitle is-4">Straight from our oven to your door</p>
+
+      <a class="button is-info is-medium mt-4" href="orders">Shop Now</a>
+    </div>
+  </section>
+  
+  <!-- Featured Products -->
+  <section class="section">
+    <div class="container">
+      <h2 class="title has-text-centered mb-6">Our Bestsellers</h2>
+      <div class="columns is-multiline">
+        @for (product of featuredProducts; track product) {
+
+
+        
+        <div class="column is-4" >
+          <div class="card hover:shadow-lg transition-shadow duration-300">
+            <div class="card-image">
+              <figure class="image is-square">
+                <img [src]="product.image" [alt]="product.name" class="object-cover w-full h-full" />
+              </figure>
+            </div>
+            <div class="card-content has-text-centered">
+              <p class="title is-5">{{ product.name }}</p>
+              <p class="subtitle is-6 text-gray-600">{{ product.description }}</p>
+              <p class="has-text-weight-bold text-orange-600">${{ product.price }}</p>
+            </div>
+          </div>
+        </div>
+    }
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer has-background-light">
+    <div class="content has-text-centered">
+      <p class="text-sm text-gray-500">
+        © 2025 Nana Cakes. All rights reserved.
+      </p>
+    </div>
+  </footer>
+  
